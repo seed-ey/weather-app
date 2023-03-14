@@ -1,12 +1,11 @@
 body {
-    padding-bottom: 300px;
     background: #b6c3c4;
-    padding-top: 20px;
+    width: 100%;
+    
     
 }
 .container {
     width: 100%; 
-    /* height: 700px; */
     background: #93bbd2;
     padding: 20px;
     border-radius: 10px;
@@ -19,11 +18,36 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.country-dropdown {
-    border: none;
-    width: 100px;
-    background: #93bbd2;
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+form { 
+    border: none; 
+    width: 300px; 
+    height: 100px;
+    background-color: #93bbd2; 
     color: black;
+}
+.search-button {
+    background-color: #023047;
+    border-radius: 5px;
+    height: 35px;
+    color: #fff;
+}
+::placeholder{
+    color:#fff;
+    opacity: 0.7;
+}
+button {
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+    height: 35px;
+    color: black;
+    
 }
 .location-icon {
     font-size: 20px;
@@ -41,13 +65,18 @@ body {
     margin: 0 auto;
     
 }
-.first-degree {
+.float-left {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-
     color: black;
+
+    /* margin-left: 50px; */
     
+}
+.temperature {
+    margin-right: -10px;
+    font-size: 20px;
 }
 .Precipitation-text {   
     text-align: center;
@@ -75,7 +104,7 @@ span{
     background: #023047;
     color: white;
     border-radius: 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto;
     
 }
@@ -111,4 +140,36 @@ br {
 }
 .second-row {
     margin-top: 40px;
+}
+.location-button {
+    background: #4E6E81;
+    padding: 1px 20px;
+    display: block;
+    margin: 20px auto;
+
+    
+    
+}
+
+#date {
+    font-weight: 700;
+    font-size: 15px;
+    color: #023047;
+    text-align: center;
+}
+#city-name {
+    font-weight: 700;
+    color: #023047;
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    
+}
+.city-temperature {
+    line-height: 25px;
+}
+@media(max-width:575px){
+    .container{
+        font-size: 12px;
+    }
 }
