@@ -109,38 +109,31 @@ span{
     
 }
 
-.head {
-    padding-left: 0px;
-    padding-bottom: 25px;
+.forecast {
+    background: #5ea5bf;
+    color: black;
+    
 }
 
-.left-content {
-    padding-left: 50px;
-}
-.left-emoji {
-    padding-left: 50px;
-
-}
-.last-left {
-    padding-left: 50px;
-}
-br {
-    padding-bottom: 70px;
-}
-.third-box {
-    display: flex;
+#forecast {
+    display: block;
     justify-content: space-between;
-    padding: 20px;
     background: #5ea5bf;
     margin-top: 30px;
     border-radius: 20px;
     line-height: 50px;
     color: black;
     font-weight: 500;
+    
+
 }
-.second-row {
-    margin-top: 40px;
+.weather-forecast{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
 }
+
 .location-button {
     background: #4E6E81;
     padding: 1px 20px;
